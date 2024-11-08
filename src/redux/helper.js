@@ -1,0 +1,90 @@
+export const nameList = [
+  "tectburner",
+  "flyingbeast",
+  "A2motivation",
+  "dev",
+  "Carry",
+  "Carryminati",
+  "codewithharry",
+  "Fluenta",
+  "Narendra",
+  "Modi",
+  "Rahul",
+  "Ganshi",
+  "nitin",
+  "Lukesh",
+  "Devika",
+  "thakur",
+  "Chirag",
+  "Aman",
+  "Suraj",
+  "Rajesh",
+  "Akash",
+  "Vikram",
+  "Shubham",
+  "MP",
+  "JP",
+  "gagan",
+  "pavan",
+  "vinay",
+  "kartik",
+  "anand",
+  "devu",
+  "shreya",
+  "divyani",
+  "dikku",
+  "temple",
+  "NArad",
+  "Deepak",
+  "Hariom",
+  "Golu",
+  "Neeraj",
+  "Santkumar",
+  "Shubh",
+  "Bheem",
+  "Sudheer",
+  "Sujeet",
+  "Anki",
+  "javed",
+  "Irfan",
+  "Yuvraj",
+  "Mayank",
+  "Sourabh",
+  "Pranshu",
+  "Vineeth",
+  "Yash",
+  "Prachit",
+  "Anurag",
+  "Ritik",
+  "Shobhit",
+  "Sanju",
+  "Shivam",
+  "Bhuvan",
+  "Jayprakash",
+  "Shivshankar",
+  "Yogest",
+  "Jay",
+  "Piyush",
+  "Anuj",
+  "nikhil",
+  "Pradeep",
+  "Abhishek",
+  "Ayush",
+  "prinsh",
+  "Manav",
+];
+
+export const generateRandomName = () => {
+  return nameList[Math.floor(Math.random() * nameList.length)];
+};
+
+export const generateRandomMessage = (length) => {
+  const charset = "QWERTYUIOPASDFGHJKLZMXNCBVqpwoeirutyalskdjfhgmznxbcv1029384756";
+  let rendomText = "";
+
+  for (let i = 0; i <= length; i++) {
+    const randomIndex = Math.floor(Math.random() * charset.length);
+    rendomText += charset[randomIndex];
+  }
+  return rendomText;
+};
